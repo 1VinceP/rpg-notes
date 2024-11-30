@@ -1,0 +1,29 @@
+.layout {
+   min-height: 100svh;
+   width: 100%;
+   display: flex;
+
+   .sidebar {
+      height: 100%;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid white;
+
+      .link-container {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .link {
+         width: 100%;
+         padding: 1rem;
+         border: 1px solid white;
+         &.link-active { background: green; }
+         &:hover {
+            background: blue;
+         }
+      }
+   }
+}
